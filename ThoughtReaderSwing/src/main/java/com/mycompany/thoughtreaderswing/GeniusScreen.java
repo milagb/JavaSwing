@@ -98,8 +98,17 @@ public class GeniusScreen extends javax.swing.JFrame {
     private void btnGuessActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuessActionPerformed
         // TODO add your handling code here:
         double n = 1 + Math.random() * (6 - 1);
-        int number = (int) n;
-        System.out.println(number);
+        int valor = (int) n;
+        
+        int num = Integer.parseInt(txtVal.getValue().toString());
+        
+        
+        String f1 = "<html> ACERTOU! </html>";
+        String f2 = "<html> ERROU! O valor foi " + valor + "</html>";
+        
+        String res = (num == valor) ? f1: f2;
+        
+        lblFrase.setText(res);
     }//GEN-LAST:event_btnGuessActionPerformed
 
     /**
