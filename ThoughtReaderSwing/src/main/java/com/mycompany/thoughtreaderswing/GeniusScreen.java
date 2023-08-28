@@ -42,6 +42,13 @@ public class GeniusScreen extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btnGuessActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuessActionPerformed
+        // TODO add your handling code here:
+        double n = 1 + Math.random() * (6 - 1);
+        int number = (int) n;
+        System.out.println(number);
+    }//GEN-LAST:event_btnGuessActionPerformed
+
     /**
      * @param args the command line arguments
      */
